@@ -14,6 +14,7 @@ public class Main {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] values = line.split(COMMA_DELIMITER);
+                System.out.println(line);
                 String name = values[0];
                 String birthday = values[1];
                 String role = values[2];

@@ -9,6 +9,7 @@ public class Employee {
     private String role;
     private String startDate;
     private String startSal;
+    private static final String FORMAT_DATE = "yyyyMMdd";
 
     public Employee(String name, String birthday, String role, String startDate, String startSal) {
         this.name = name;
@@ -45,12 +46,13 @@ public class Employee {
         System.out.println("----------------------------------");
     }
 
-    public int getAge(String birthday) {
+    public long getAge(String birthday) {
         try {
-            SimpleDateFormat formatDate = new SimpleDateFormat("yyyyMMdd");
+            SimpleDateFormat formatDate = new SimpleDateFormat(FORMAT_DATE);
             Date current = new Date();
             Date newDate = formatDate.parse(birthday);
-            return current.getYear() - newDate.getYear();
+            long diff = current.getTime() - newDate.getTime();
+            return (diff / (1000 * 60 * 60 * 24))/ 365;
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -58,7 +60,16 @@ public class Employee {
     }
 
     public String getWorkDate(String startDate) {
-        return "2 nam";
+        try {
+            SimpleDateFormat formatDate = new SimpleDateFormat(FORMAT_DATE);
+            Date current = new Date();
+            Date newDate = formatDate.parse(startDate);
+            long diff = current.getTime() - newDate.getTime();
+            return (diff / (1000 * 60 * 60 * 24))/ 365 + "," + (diff / (1000 * 60 * 60 * 24))/ 365 * 12;
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public int getEmployeeSalary(String birthday) {
