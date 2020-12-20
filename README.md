@@ -1,8 +1,4 @@
 # CleanCode
-
-Họ tên: Nghiêm Xuân Tùng
-Phòng: DEV5
-
 ================ Nộp bài tập PayRoll ==================
 
 Các phần đã hoàn thành:
