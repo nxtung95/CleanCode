@@ -1,5 +1,5 @@
 # CleanCode
-Họ và tên: Nghiêm Xuân Tùng  
+Họ tên: Nghiêm Xuân Tùng  
 Phòng: DEV5
 
 # Bài tập PayRoll
