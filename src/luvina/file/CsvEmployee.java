@@ -19,7 +19,6 @@ public class CsvEmployee implements IEmployeeFile {
 			line = reader.readLine();
 			while (line != null) {
 				lines.add(line);
-				System.out.println(line);
 				line = reader.readLine();
 			}
 			return lines;
