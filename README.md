@@ -1,7 +1,11 @@
 # CleanCode
-================ Nộp bài tập PayRoll ==================
+Họ và tên: Nghiêm Xuân Tùng  
+Phòng: DEV5
 
-Các phần đã hoàn thành:
+# Bài tập PayRoll
+Project được code trên ngôn ngữ Java, in trên console ( Java core).
+
+### Các phần đã hoàn thành:
 1. Đọc vào danh sách nhân viên dạng file CSV
 2. In ra màn hình:
 - Tuổi hiện tại của nhân viên
@@ -9,4 +13,9 @@ Các phần đã hoàn thành:
 3. Tính lương của nhân viên theo thâm niên
 4. Hỗ trợ đọc vào file Excel
 5. Tính lương dựa vào chỉ số tăng lương của mỗi chức vụ
-6. Biểu đồ Class Diagram (UML)
+
+### Cách sử dụng git-repo:
+1. Clone project về:
+> git clone https://github.com/nxtung95/CleanCode.git
+
+2. Run class main ở src/luvina/main/PayRoll.java
